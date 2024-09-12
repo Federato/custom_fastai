@@ -7,7 +7,7 @@ from __future__ import annotations
 from ..torch_basics import *
 from fastdownload import FastDownload
 from functools import lru_cache
-import fastai.data
+import custom_fastai.data
 
 # %% auto 0
 __all__ = ['fastai_cfg', 'fastai_path', 'URLs', 'untar_data']
@@ -134,5 +134,5 @@ def untar_data(
     base:str='~/.fastai' # Directory containing config file and base of relative paths
 ) -> Path: # Path to extracted file(s)
     "Download `url` using `FastDownload.get`"
-    d = FastDownload(fastai_cfg(), module=fastai.data, archive=archive, data=data, base=base)
+    d = FastDownload(fastai_cfg(), module=custom_fastai.data, archive=archive, data=data, base=base)
     return d.get(url, force=force_download, extract_key=c_key)

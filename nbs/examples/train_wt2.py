@@ -1,6 +1,6 @@
-from fastai.basics import *
-from fastai.text.all import *
-from fastai.callback.all import *
+from custom_fastai.basics import *
+from custom_fastai.text.all import *
+from custom_fastai.callback.all import *
 from fastcore.script import *
 
 def istitle(line):

@@ -1,6 +1,6 @@
-from fastai.vision.all import *
-from fastai.distributed import *
-from fastai.vision.models.xresnet import *
+from custom_fastai.vision.all import *
+from custom_fastai.distributed import *
+from custom_fastai.vision.models.xresnet import *
 
 path = rank0_first(untar_data, URLs.IMAGEWOOF_320)
 dls = DataBlock(

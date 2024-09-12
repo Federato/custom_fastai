@@ -1,10 +1,10 @@
-from fastai.basics import *
-from fastai.callback.all import *
-from fastai.distributed import *
+from custom_fastai.basics import *
+from custom_fastai.callback.all import *
+from custom_fastai.distributed import *
 from fastprogress import fastprogress
-from fastai.callback.mixup import *
+from custom_fastai.callback.mixup import *
 from fastcore.script import *
-from fastai.text.all import *
+from custom_fastai.text.all import *
 
 torch.backends.cudnn.benchmark = True
 fastprogress.MAX_COLS = 80

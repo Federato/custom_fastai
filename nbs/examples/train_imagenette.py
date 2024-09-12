@@ -1,11 +1,11 @@
-from fastai.basics import *
-from fastai.vision.all import *
-from fastai.callback.all import *
-from fastai.distributed import *
+from custom_fastai.basics import *
+from custom_fastai.vision.all import *
+from custom_fastai.callback.all import *
+from custom_fastai.distributed import *
 from fastprogress import fastprogress
 from torchvision.models import *
-from fastai.vision.models.xresnet import *
-from fastai.callback.mixup import *
+from custom_fastai.vision.models.xresnet import *
+from custom_fastai.callback.mixup import *
 from fastcore.script import *
 
 torch.backends.cudnn.benchmark = True

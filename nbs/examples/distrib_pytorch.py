@@ -1,5 +1,5 @@
-from fastai.vision.all import *
-from fastai.distributed import *
+from custom_fastai.vision.all import *
+from custom_fastai.distributed import *
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 

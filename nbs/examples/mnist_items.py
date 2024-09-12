@@ -1,4 +1,4 @@
-from fastai.vision.all import *
+from custom_fastai.vision.all import *
 
 items = get_image_files(untar_data(URLs.MNIST))
 splits = GrandparentSplitter(train_name='training', valid_name='testing')(items)

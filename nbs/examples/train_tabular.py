@@ -1,9 +1,9 @@
-from fastai.basics import *
-from fastai.tabular.all import *
-from fastai.callback.all import *
-from fastai.distributed import *
+from custom_fastai.basics import *
+from custom_fastai.tabular.all import *
+from custom_fastai.callback.all import *
+from custom_fastai.distributed import *
 from fastprogress import fastprogress
-from fastai.callback.mixup import *
+from custom_fastai.callback.mixup import *
 from fastcore.script import *
 
 torch.backends.cudnn.benchmark = True

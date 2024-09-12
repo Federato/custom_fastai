@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from fastai.vision.all import *
+from custom_fastai.vision.all import *
 
 def get_data(url, presize, resize):
     path = untar_data(url)

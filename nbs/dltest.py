@@ -1,5 +1,5 @@
-from fastai.torch_basics import *
-from fastai.data.load import *
+from custom_fastai.torch_basics import *
+from custom_fastai.data.load import *
 
 class RandDL(DataLoader):
     def create_item(self, s):
