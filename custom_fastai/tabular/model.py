@@ -77,6 +77,7 @@ class TabularModel(Module):
         if x_vec is not None:
             x_vec = [lin_layer(x_vec[i]) for i,lin_layer in enumerate(self.vec_layers)]
             x_vec = torch.cat(x_vec, 1)
+            x_vec = self.emb_drop(x_vec)
             x = torch.cat([x, x_vec], 1) if self.n_emb != 0 or self.n_cont != 0 else x_vec
         return self.layers(x)
 
