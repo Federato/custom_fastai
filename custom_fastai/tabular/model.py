@@ -55,7 +55,7 @@ class TabularModel(Module):
         self.emb_drop = nn.Dropout(embed_p)
         self.bn_cont = nn.BatchNorm1d(n_cont) if bn_cont else None
         if vec_sizes:
-            self.vec_layers = nn.ModuleList([nn.Linear(size, 1) for size in vec_sizes])
+            self.vec_layers = nn.ModuleList([nn.Sequential(nn.Linear(size, 1), nn.ReLU()) for size in vec_sizes])
         n_emb = sum(e.embedding_dim for e in self.embeds)
         n_vec = len(vec_sizes)
         self.n_emb,self.n_cont = n_emb,n_cont
